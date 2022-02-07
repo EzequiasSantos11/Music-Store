@@ -1,0 +1,12 @@
+.container{
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  height: 18%;
+  width: 100%;
+  background: var(--background-primary);
+  border-top: 1px solid var(--background-hover);
+  z-index: 999;
+}
