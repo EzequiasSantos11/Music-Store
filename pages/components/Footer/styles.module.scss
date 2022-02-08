@@ -9,4 +9,91 @@
   background: var(--background-primary);
   border-top: 1px solid var(--background-hover);
   z-index: 999;
+  .wrapper{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    .preview{
+      display: flex;
+      align-items: center;
+      width: 100%;
+      img{
+        height: 70px;
+        width: 70px;
+        background: white;
+        margin-right: 20px;
+        border-radius: 20px;
+      }
+      .text{
+        display: flex;
+        flex-direction: column;
+        margin-right: 30px;
+      }
+      a{
+        padding: 0 4px;
+        cursor: pointer;
+        border: 1px solid white;
+        border-radius: 50%;
+        position: relative;
+        transition: all 0.4s ease;
+        &:hover{
+          &::after{
+          content: "Adicionar a playlist";
+          color: white;
+          background: var(--background-hover);
+          font-size: 12px;
+          position: absolute;
+          width: 100px;
+          top: -24px;
+          padding: 4px;
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+          border-bottom-right-radius: 10px;
+        }}
+        transition: all 0.8s ease;
+      }
+    }
+    .navigation{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      position: relative;
+      margin-bottom: 20px;
+      margin-left: 50px;
+      .iconsPlayer{
+        display: flex;
+        .iconPlay{
+          font-size: 40px;
+          margin: 0 10px;
+          cursor: pointer;
+        }
+      }
+      .progress{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        position: absolute;
+        bottom: -30px;
+        .line{
+          content: "";
+          display: flex;
+          color: var(--color-secondary);
+          background: var(--color-secondary);
+          height: 2px;
+          width: 80%;
+          margin: 0 10px;
+        }
+      }
+    }
+    .controllers{
+      display: flex;
+      justify-content: flex-end;
+      padding-right: 60px;
+      width: 100%;
+    }
+  }
 }
