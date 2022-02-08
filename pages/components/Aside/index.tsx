@@ -8,7 +8,7 @@ import DownloadingIcon from '@mui/icons-material/Downloading';
 import Styles from "./styles.module.scss";
 
 
-export function Aside(){
+export default function Aside(){
   return(
     <aside className={Styles.container}>
       <div className={Styles.logo}>

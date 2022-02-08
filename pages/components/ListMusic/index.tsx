@@ -1,7 +1,7 @@
 import Styles from "./styles.module.scss";
 import {useState} from "react";
 
-export function ListMusic(){
+export default function ListMusic(){
   const [lisMusic, setListMusic] = useState([
     {id: 1, name: "rebelde", studio: "sony", capa: "assets/music.webp"},
     {id: 2, name: "rebelde", studio: "sony", capa: "assets/music.webp"},

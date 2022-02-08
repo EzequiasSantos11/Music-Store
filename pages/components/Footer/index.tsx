@@ -8,7 +8,7 @@ import PauseCircleOutlineIcon from '@mui/icons-material/PauseCircleOutline';
 import SkipPreviousIcon from '@mui/icons-material/SkipPrevious';
 import VolumeUpIcon from '@mui/icons-material/VolumeUp';
 
-export function Footer(){
+export default function Footer(){
   const [onPlay, setOnPlay] = useState(false);
   return(
     <footer className={Styles.container}>

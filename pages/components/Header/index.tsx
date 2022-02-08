@@ -3,7 +3,7 @@ import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import {useState} from "react";
 import Styles from './styles.module.scss';
 
-export function Header({blackHeader}){
+export default function Header({blackHeader}){
   const [navOpen, setNavOpen] = useState(false);
   return(
     <header className={Styles.container}>
