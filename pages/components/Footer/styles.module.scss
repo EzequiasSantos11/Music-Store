@@ -62,8 +62,8 @@
       align-items: center;
       width: 100%;
       position: relative;
+      margin: 0 auto;
       margin-bottom: 20px;
-      margin-left: 50px;
       .iconsPlayer{
         display: flex;
         .iconPlay{
@@ -93,7 +93,7 @@
       display: flex;
       justify-content: flex-end;
       padding-right: 60px;
-      width: 100%;
+      width: 60%;
     }
   }
 }
