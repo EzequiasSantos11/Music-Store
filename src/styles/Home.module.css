@@ -8,3 +8,10 @@
   padding-top: 5.5rem;
   padding-bottom: 10%;
 }
+@media (max-width: 800px) {
+  .container{
+    padding: 0;
+    padding-top: 5.5rem;
+    padding-bottom: 20%;
+  }
+}

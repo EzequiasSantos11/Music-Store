@@ -72,3 +72,51 @@
     }
   }
 }
+
+@media (max-width: 800px) {
+  .container{
+    width: 48%;
+    left: -20rem;
+    transition: all .4s ease;
+    z-index: 999;
+    padding-top: 80px;
+    .logo{
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      margin-left: -8px;
+      .logosvg{
+        font-size: 1.5rem;
+        margin-right: 5px;
+      }
+      h2{
+        font-size: 18px;
+      }
+  
+    }
+    .ulPrimary, .ulSecondary{
+      margin: 0;
+      li{
+        margin: 0;
+        .iconSvg{
+          font-size: 1rem;
+          margin-right: 5px;
+          margin-bottom: 5px;
+        }
+      }
+    }
+    a{
+      font-size: 14px;
+      .iconSvg{
+        font-size: 1rem;
+        margin-right: 5px;
+        margin-bottom: 5px;
+      }
+    }
+  }
+  .close{
+    .container{
+      left: 0;
+    }
+  }
+}

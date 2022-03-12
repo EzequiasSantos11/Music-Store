@@ -62,7 +62,6 @@
       align-items: center;
       width: 100%;
       position: relative;
-      margin: 0 auto;
       margin-bottom: 20px;
       .iconsPlayer{
         display: flex;
@@ -71,7 +70,28 @@
           margin: 0 10px;
           cursor: pointer;
         }
+        .iconSkipEsq{
+          font-size: 40px;
+          margin: 0 10px;
+          cursor: pointer;
+        }
+        .iconSkipDir{
+          font-size: 40px;
+          margin: 0 10px;
+          cursor: pointer;
+        }
+        .iconReplay{
+          font-size: 40px;
+          margin: 0 10px;
+          cursor: pointer;
+        }
+        .iconForwar{
+          font-size: 40px;
+          margin: 0 10px;
+          cursor: pointer;
+        }
       }
+     
       .progress{
         display: flex;
         width: 100%;
@@ -94,6 +114,87 @@
       justify-content: flex-end;
       padding-right: 60px;
       width: 60%;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .container{
+    width: 100%;
+    .wrapper{
+      align-items: center;
+      padding: 0;
+      justify-content: center;
+      padding: 0 10px;
+      .preview{
+        width: 90%;
+        height: 100%;
+        margin-left: 20px;
+        img{
+          height: 60px;
+          width: 60px;
+          object-fit: cover;
+          border-radius: 0;
+          margin-right: 10px;
+        }
+        .text{
+          font-size: 14px;
+          margin: 0;
+          width: 100%;
+          word-break: break-all;
+        }
+        a{
+          display: none;
+        }
+      }
+      .navigation{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+        margin: 0 auto;
+        position: initial;
+        .iconsPlayer{
+          display: flex;
+          .iconPlay{
+            font-size: 40px;
+            margin: 0 ;
+            cursor: pointer;
+          }
+          .iconSkipEsq{
+            display: none;
+          }
+          .iconReplay{
+            display: none;
+          }
+          .iconForwar{
+           display: none;
+          }
+        }
+        .progress{
+          display: flex;
+          align-items: center;
+          position: absolute;
+          bottom: 5px;
+          left: 0;
+          right: 10px;
+          z-index: 99;
+          span{
+            display: none;
+          }
+          .line{
+            content: "";
+            display: flex;
+            color: var(--color-secondary);
+            background: var(--color-secondary);
+            height: 2px;
+            width: 100%;
+          }
+        }
+      }
+      .controllers{
+        display: none;
+      }
     }
   }
 }

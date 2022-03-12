@@ -6,6 +6,7 @@ import Header from './components/Header'
 
 function MyApp({ Component, pageProps }) {
   const [backHeader, setBlackHeader] = useState(false);
+  const [openMenu, setOpenMenu] = useState(true);
   useEffect(()=>{
     const scrollListener = ()=>{
       if(window.scrollY > 10){
@@ -21,8 +22,8 @@ function MyApp({ Component, pageProps }) {
   },[])
   return(
     <>
-      <Aside/>
-      <Header blackHeader={backHeader}/>
+      <Aside openMenu={openMenu}/>
+      <Header openMenu={openMenu} openMenuFunction={()=>setOpenMenu(!openMenu)} blackHeader={backHeader}/>
       <Component {...pageProps} />
       <Footer/>
     </>

@@ -3,10 +3,15 @@ import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import {useState} from "react";
 import Styles from './styles.module.scss';
 
-export default function Header({blackHeader}){
+export default function Header({blackHeader, openMenuFunction, openMenu}){
   const [navOpen, setNavOpen] = useState(false);
   return(
     <header className={Styles.container}>
+      <div className={Styles.menuIcon} onClick={openMenuFunction}>
+        <span className={openMenu ? Styles.open : Styles.close1}></span>
+        <span className={openMenu ? Styles.open : Styles.close2}></span>
+        <span className={openMenu ? Styles.open : Styles.close3}></span>
+      </div>
       <div className={`${Styles.initial} + ${blackHeader ? `${Styles.wrapperBlack}` : ""}`}>
         <div className={Styles.left}>
           <button className={Styles.arrowLeft}>

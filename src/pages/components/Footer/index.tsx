@@ -23,9 +23,9 @@ export default function Footer(){
        </div>
        <div className={Styles.navigation}>
           <div className={Styles.iconsPlayer}>
-            <Replay5Icon className={Styles.iconPlay}/>
+            <Replay5Icon className={Styles.iconReplay}/>
 
-            <SkipPreviousIcon className={Styles.iconPlay}/>
+            <SkipPreviousIcon className={Styles.iconSkipEsq}/>
 
             <PlayCircleOutlineIcon 
               onClick={()=>setOnPlay(true)}  
@@ -35,9 +35,9 @@ export default function Footer(){
 
             <PauseCircleOutlineIcon onClick={()=>setOnPlay(false)} style={{display: onPlay ? "flex" : "none"}} className={Styles.iconPlay}/>
 
-            <SkipNextIcon className={Styles.iconPlay}/>
+            <SkipNextIcon className={Styles.iconSkipDir}/>
 
-            <Forward5Icon className={Styles.iconPlay}/>
+            <Forward5Icon className={Styles.iconForwar}/>
           </div> 
           <div className={Styles.progress}>
             <span>2:00</span>
